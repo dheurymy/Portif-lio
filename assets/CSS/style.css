@@ -8,7 +8,7 @@
 
 :root {
 
-   --corDeFundo: #c898a2;
+   --corDeFundo: #39426d;
    --corContainer: #2B2B2B;
    --corDestaques: #45F9C6; 
    --corRodape: #45f9c634;
@@ -33,8 +33,8 @@ body {
    height: 100vh;
 
    display: flex;
-   flex-direction: row;
-   justify-content: center;
+   flex-direction: column;
+   justify-content: flex-start;
    align-items: center;
 
    background-color: var(--corDeFundo);
@@ -393,5 +393,315 @@ display: relative;
    font-weight: 300;
 }
 
+/* Ajuste dos estilos para layouts acima de 1000px */
+
+@media screen and (min-width: 1000px) {
+   /* Estilos para a tela principal */
+
+   body {
+      
+      justify-content: center;
+      
+      font-size: medium;
+   }
 
 
+   /* Estilos para o container de conteúdo */
+
+   .container {
+      width: 1000px;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      
+
+      margin-top: 0;
+   }
+
+
+   /* Estilos para o cabecalho */
+
+   .header {
+      width: 900px;
+      height: 70px;
+
+      margin-top: 10px;
+   }
+
+   .header>nav {
+      
+      gap: 50px;
+   }
+
+   .header>nav>a {
+   
+      font-size: medium;
+      
+   }
+
+
+   .headerLinkFlap>img {
+      width: auto;
+      height: 30px;
+   }
+
+
+   /* Estilos para o conteúdo principal */
+
+.main {
+   width: 900px;
+   height: auto;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+
+   margin-top: 10px;
+}
+
+.mainBlock {
+   width: 450px;
+   height: auto;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+/* Estilos especificos para criar o efeito de borda movimentada para a foto de perfil */ 
+
+#mainBlockImage {
+width: 100%;
+height: 260px;
+
+display: relative;
+}
+
+#profileImageContent {
+   position: absolute;
+
+   z-index: 10;
+}
+
+#profileImage {
+   width: 350px;
+   height: auto;
+
+   border-radius: 20px;
+}
+
+#profileImageBorder {
+   width: 350px;
+   height: 350px;
+
+   position: absolute;
+
+   border: 3px solid var(--corDestaques);
+   border-radius: 20px;
+
+   transform: translate(10px, -10px);
+}
+
+/* Estilos especificos para cria o efeito de sombra na foto da aba habilidades */
+
+#mainBlockHabilidades {
+   width: 100%;
+   height: 160px;
+   
+   display: relative;
+
+   margin-bottom: 10px;
+   }
+   
+   #habImageContent {
+      position: absolute;
+   
+      z-index: 10;
+   }
+   
+   #habImage {
+      width: 150px;
+      height: auto;
+   
+      border-radius: 75px;
+   }
+   
+   #habImageBorder {
+      width: 150px;
+      height: 150px;
+   
+      position: absolute;
+   
+      border: 3px solid var(--corDestaques);
+      border-radius: 75px;
+   
+      transform: translate(-10px, 10px);
+      background-color: var(--corDestaques);
+   }
+
+   
+   /* Estilos especificos para cria o efeito de borda arrastada nas fotos da aba projetos*/
+
+.mainBlockProjetos {
+   width: 100%;
+   height: 160px;
+   
+   display: relative;
+
+   margin-bottom: 10px;
+   }
+   
+   #projImageContent {
+      position: absolute;
+   
+      z-index: 10;
+   }
+   
+   #projImage {
+      width: 300px;
+      height: auto;
+   
+      border-radius: 20px;
+   }
+   
+   #projImageBorder {
+      width: 300px;
+      height: 150px;
+   
+      position: absolute;
+   
+      border: 3px solid var(--corDestaques);
+      border-radius: 20px;
+   
+      transform: translate(10px, 10px);
+   }
+
+   
+
+/* Estilos para o bloco de texto principal */
+
+#mainBlockTextTitle {
+   width: 100%;
+   height: auto;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+#mainBlockTextTitle > h1 {
+   font-family: "Do Hyeon", sans-serif;
+   font-weight: 600;
+   font-size: x-large;
+}
+
+#lightText {
+   color: var(--corDestaques);
+}
+
+#mainBlockTextContent > p {
+   font-size: small;
+   text-align: justify;
+
+   margin: 5px 0px 5px 0px;
+}
+
+#mainBlockTextPage {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+   width: 100%;
+}
+
+.textPage {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+   font-size: x-small;
+   text-align: justify;
+   margin-top: 10px;
+}
+
+.textPage > img {
+   width: 30px;
+}
+
+/* Estilos para o bloco de links */
+
+#mainBlockLinks {
+   margin: 15px 0px 15px 0px;
+   gap: 20px;
+}
+
+#mainBlockLinks > h3 {
+   font-family: "Do Hyeon", sans-serif;
+   font-weight: 500;
+   font-size: medium;
+}
+
+#mainBlockLinks > a {
+   color: var(--corDestaques);
+   font-family: "Do Hyeon", sans-serif;
+   font-weight: 500;
+   font-size: medium;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+   border: 1px solid var(--corDestaques);
+   border-radius: 10px;
+
+   width: 180px;
+   height: 40px;
+}
+
+.mainLink > img {
+   width: auto;
+   height: 30px;
+}
+
+
+   /* Estilos para o rodapé */
+
+.footer {
+   width: 1000px;
+   height: auto;
+
+   flex-direction: row;
+
+   gap: 60px;
+
+}
+
+
+#footerImage > img {
+   height: 50px;
+   width: auto;
+}
+
+#footerText > h4 {
+   font-size: x-small;
+}
+
+
+   
+}
