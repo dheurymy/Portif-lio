@@ -146,6 +146,7 @@ body {
    gap: 5px;
 
    margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 .mainBlock {
@@ -357,6 +358,10 @@ display: relative;
    height: 40px;
 }
 
+#mainBlockLinks > a:hover {
+   background-color: var(--corDeFundo);
+}
+
 .mainLink > img {
    width: auto;
    height: 30px;
@@ -379,18 +384,29 @@ display: relative;
    margin-bottom: 10px;
 }
 
-#footerImage {
+#footerText {
    margin-top: 20px;
 }
 
-#footerImage > img {
-   height: 30px;
-   width: auto;
-}
 
 #footerText > h4 {
    font-size: xx-small;
    font-weight: 300;
+}
+
+.mensagem1, .mensagem2, .mensagem3, .mensagem4 {
+   display: flex;
+   position: absolute;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--corDestaques);
+   width: 300px;
+   height: 30px;
+   border-radius: 20px;
+   top: 120px;
+   color: var(--corDeFundo);
+   font-size: small;
+   font-weight: 600;
 }
 
 /* Ajuste dos estilos para layouts acima de 1000px */
@@ -411,13 +427,6 @@ display: relative;
    .container {
       width: 1000px;
       height: auto;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      
 
       margin-top: 0;
    }
@@ -463,6 +472,7 @@ display: relative;
    gap: 50px;
 
    margin-top: 10px;
+  
 }
 
 .mainBlock {
@@ -476,11 +486,17 @@ display: relative;
 
 }
 
+.mainBlockHabilidades {
+   width: 600px;
+
+   margin-bottom: 20px;
+}
+
 /* Estilos especificos para criar o efeito de borda movimentada para a foto de perfil */ 
 
 #mainBlockImage {
 width: 100%;
-height: 260px;
+height: 360px;
 
 display: relative;
 }
@@ -510,44 +526,7 @@ display: relative;
    transform: translate(10px, -10px);
 }
 
-/* Estilos especificos para cria o efeito de sombra na foto da aba habilidades */
 
-#mainBlockHabilidades {
-   width: 100%;
-   height: 160px;
-   
-   display: relative;
-
-   margin-bottom: 10px;
-   }
-   
-   #habImageContent {
-      position: absolute;
-   
-      z-index: 10;
-   }
-   
-   #habImage {
-      width: 150px;
-      height: auto;
-   
-      border-radius: 75px;
-   }
-   
-   #habImageBorder {
-      width: 150px;
-      height: 150px;
-   
-      position: absolute;
-   
-      border: 3px solid var(--corDestaques);
-      border-radius: 75px;
-   
-      transform: translate(-10px, 10px);
-      background-color: var(--corDestaques);
-   }
-
-   
    /* Estilos especificos para cria o efeito de borda arrastada nas fotos da aba projetos*/
 
 .mainBlockProjetos {
@@ -588,58 +567,51 @@ display: relative;
 
 /* Estilos para o bloco de texto principal */
 
-#mainBlockTextTitle {
-   width: 100%;
-   height: auto;
-
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-}
-
-#mainBlockTextTitle > h1 {
-   font-family: "Do Hyeon", sans-serif;
-   font-weight: 600;
-   font-size: x-large;
-}
-
-#lightText {
-   color: var(--corDestaques);
-}
 
 #mainBlockTextContent > p {
-   font-size: small;
-   text-align: justify;
-
-   margin: 5px 0px 5px 0px;
+   font-size: medium;
+   
 }
 
 #mainBlockTextPage {
+   
+   gap: 20px;
+
+}
+
+.textPage {
+  
+   gap: 20px;
+
+   font-size: small;
+   
+}
+
+.textPage > img {
+   width: 40px;
+}
+
+#pageHabilidades {
+   width: 300px;
+
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 10px;
-
-   width: 100%;
+   gap: 100px;
 }
 
-.textPage {
+#mainProjetos {
+   flex-direction: column;
+
+   margin-bottom: 20px;
+}
+
+.pageProjetos {
    display: flex;
+
    flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-
-   font-size: x-small;
-   text-align: justify;
-   margin-top: 10px;
-}
-
-.textPage > img {
-   width: 30px;
+   gap: 400px;
 }
 
 /* Estilos para o bloco de links */

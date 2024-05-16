@@ -11,7 +11,7 @@
       <div class="container">
          <div class="header">
             <nav>
-               <a href="index.html" class="headerLink">
+               <a href="index.html" class="headerLink" >
                   <div class="headerLinkFlap">
                      <img src="assets/images/iconePerfil.png"
                         alt="Ícone de perfil.">
@@ -40,7 +40,7 @@
             
          </div>
 
-         <div class="main">
+         <div class="main" id="mainProjetos">
 
             <div class="mainBlock" id="mainBlockText">
                <div id="mainBlockTextTitle">
@@ -50,62 +50,71 @@
 
             </div>
 
-            <a href="https://dheurymy.github.io/Desafio-02---Trilhas-Inova/">
-               <div class="mainBlock mainBlockProjetos">
-                  <div id="projImageContent">
-                     <img id="projImage"
-                        src="assets/images/ProjetoFormulario.png"
-                        alt="Projeto de formulário.">
+            <div class="pageProjetos">
+               <a href="https://dheurymy.github.io/Desafio-02---Trilhas-Inova/" onmouseover="mostrarMensagem(mensagem1)" onmouseout="esconderMensagem(mensagem1)">
+                  <div class="mainBlock mainBlockProjetos">
+                     <div id="projImageContent">
+                        <span class="mensagem1">Formulário de
+                           inscrição.</span>
+                        <img id="projImage"
+                           src="assets/images/ProjetoFormulario.png"
+                           alt="Projeto de formulário.">
+                     </div>
+                     <div id="projImageBorder"></div>
+                     
                   </div>
-                  <div id="projImageBorder"></div>
-               </div>
-            </a>
-
-            <a href="https://dheurymy.github.io/ProjetoFokus/">
-               <div class="mainBlock mainBlockProjetos">
-                  <div id="projImageContent">
-                     <img id="projImage"
-                        src="assets/images/ProjetoFokus.png"
-                        alt="Projeto de formulário.">
+               </a>
+               <a href="https://dheurymy.github.io/ProjetoFokus/" onmouseover="mostrarMensagem(mensagem2)" onmouseout="esconderMensagem(mensagem2)">
+                  <div class="mainBlock mainBlockProjetos">
+                     <div id="projImageContent">
+                        <span class="mensagem2">Temporizador estilo pomodoro.</span>
+                        <img id="projImage"
+                           src="assets/images/ProjetoFokus.png"
+                           alt="Projeto de formulário.">
+                     </div>
+                     <div id="projImageBorder"></div>
                   </div>
-                  <div id="projImageBorder"></div>
-               </div>
-            </a>
-
-            <a href="https://dheurymy.github.io/ProjetoBootstrap/">
-               <div class="mainBlock mainBlockProjetos">
-                  <div id="projImageContent">
-                     <img id="projImage"
-                        src="assets/images/ProjetoBootstrap.png"
-                        alt="Projeto de formulário.">
-                  </div>
-                  <div id="projImageBorder"></div>
-               </div>
-            </a>
-
-            <a href="https://github.com/dheurymy/Pipeline-ETL-com-Python-usando-IA-Generativa-GPT-3.5">
-               <div class="mainBlock mainBlockProjetos">
-                  <div id="projImageContent">
-                     <img id="projImage"
-                        src="assets/images/ProjetoPipelineETL.png"
-                        alt="Projeto de formulário.">
-                  </div>
-                  <div id="projImageBorder"></div>
-               </div>
-            </a>
-
-            <div class="footer">
-               <div id="footerImage">
-                  <img src="assets/images/Logo Alura Include.svg"
-                     alt="Logotipo do Alura Include">
-               </div>
-               <div id="footerText">
-                  <h4>
-                     Desenvolvido por Rycherd Dheurymy.
-                  </h4>
-               </div>
-
+               </a>
             </div>
+
+            <div class="pageProjetos">
+               <a href="https://dheurymy.github.io/ProjetoBootstrap/" onmouseover="mostrarMensagem(mensagem3)" onmouseout="esconderMensagem(mensagem3)">
+                  <div class="mainBlock mainBlockProjetos">
+                     <div id="projImageContent">
+                        <span class="mensagem3">Site utlizando Bootstrap.</span>
+                        <img id="projImage"
+                           src="assets/images/ProjetoBootstrap.png"
+                           alt="Projeto de formulário.">
+                     </div>
+                     <div id="projImageBorder"></div>
+                  </div>
+               </a>
+               <a href="https://github.com/dheurymy/Pipeline-ETL-com-Python-usando-IA-Generativa-GPT-3.5" onmouseover="mostrarMensagem(mensagem4)" onmouseout="esconderMensagem(mensagem4)">
+                  <div class="mainBlock mainBlockProjetos">
+                     <div id="projImageContent">
+                        <span class="mensagem4">Pipeline ETL com Python.</span>
+                        <img id="projImage"
+                           src="assets/images/ProjetoPipelineETL.png"
+                           alt="Projeto de formulário.">
+                     </div>
+                     <div id="projImageBorder"></div>
+                  </div>
+               </a>
+            </div>
+
+            
          </div>
+
+         <div class="footer">
+               
+            <div id="footerText">
+               <h4>
+                  Desenvolvido por Rycherd Dheurymy.
+               </h4>
+            </div>
+
+         </div>
+
+         <script src="assets/JS/page.js"></script>
       </body>
    </html>
